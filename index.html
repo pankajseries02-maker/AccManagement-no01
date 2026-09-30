@@ -23,7 +23,6 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-  <!-- Google Fonts for Modern Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -60,7 +59,6 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
       padding: 30px 15px;
     }
 
-    /* Ambient Background Glows */
     body::before {
       content: '';
       position: fixed;
@@ -74,7 +72,6 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
       z-index: 0;
     }
 
-    /* Animated Background Container */
     .bg-animation {
       position: fixed;
       top: 0;
@@ -85,7 +82,6 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
       pointer-events: none;
     }
 
-    /* Grid Line Movement */
     .grid-overlay {
       position: absolute;
       width: 200%;
@@ -104,7 +100,6 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
       100% { transform: translateY(50px); }
     }
 
-    /* Wave Line Animation */
     .chart-wave {
       position: absolute;
       width: 100%;
@@ -131,7 +126,6 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
       to { filter: drop-shadow(0 0 10px var(--red-accent)); }
     }
 
-    /* Pulsing Green Candlesticks */
     .candlestick {
       animation: pulseBar 1.8s infinite alternate ease-in-out;
     }
@@ -141,7 +135,6 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
       100% { opacity: 0.6; transform: scaleY(1.05); }
     }
 
-    /* Layer Container Styling */
     .container {
       position: relative;
       z-index: 2;
@@ -209,7 +202,6 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
       object-fit: cover;
     }
 
-    /* Countdown Timer Redesign */
     .timer {
       font-size: 72px;
       font-weight: 900;
@@ -221,7 +213,6 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
       letter-spacing: -2px;
     }
 
-    /* CTA Button Redesign */
     .cta-button {
       display: flex;
       align-items: center;
@@ -229,10 +220,10 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
       width: 100%;
       background: linear-gradient(135deg, #00ff66 0%, #00cc52 100%);
       color: #000000;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 800;
       text-decoration: none;
-      padding: 18px 16px;
+      padding: 18px 14px;
       border-radius: 14px;
       box-shadow: 0 8px 30px var(--green-glow);
       cursor: pointer;
@@ -240,6 +231,7 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
       transition: all 0.2s ease;
       letter-spacing: 0.5px;
       margin-bottom: 24px;
+      text-transform: uppercase;
     }
 
     .cta-button:hover {
@@ -251,22 +243,21 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
       transform: translateY(1px);
     }
 
-    /* Features List Styling */
     .features-list {
       list-style: none;
       width: 100%;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       display: flex;
       flex-direction: column;
       gap: 10px;
     }
 
     .features-list li {
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 700;
       color: #e2e8f0;
       background: rgba(255, 255, 255, 0.03);
-      padding: 10px 14px;
+      padding: 11px 14px;
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.04);
       text-align: left;
@@ -285,7 +276,7 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
     }
 
     .features-list .highlight-text {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 800;
       color: var(--primary-green);
       background: rgba(0, 255, 102, 0.06);
@@ -293,27 +284,33 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
       text-align: center;
     }
 
-    /* Promo Banner */
+    /* Policy-Safe Managed By / Agency Promotion Banner */
     .promo-banner {
-      border: 1px solid rgba(255, 51, 102, 0.4);
-      color: #f87171;
+      border: 1px solid rgba(255, 51, 102, 0.35);
+      color: #fca5a5;
       background-color: rgba(255, 51, 102, 0.08);
       padding: 10px 14px;
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 700;
       border-radius: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 4px;
       width: 100%;
       backdrop-filter: blur(4px);
+      letter-spacing: 0.3px;
     }
 
     .promo-banner a {
       color: #ffffff;
       text-decoration: underline;
       text-underline-offset: 3px;
+      font-weight: 800;
+      transition: color 0.2s ease;
     }
 
-    /* Footer Links */
+    .promo-banner a:hover {
+      color: var(--primary-green);
+    }
+
     .footer-links {
       position: relative;
       z-index: 2;
@@ -335,7 +332,6 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
       color: var(--primary-green);
     }
 
-    /* Modals / Popups */
     .modal {
       display: none;
       position: fixed;
@@ -393,7 +389,6 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
 </head>
 <body>
 
-  <!-- Background Animation -->
   <div class="bg-animation">
     <div class="grid-overlay"></div>
     
@@ -420,7 +415,6 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
     </svg>
   </div>
 
-  <!-- MAIN LANDING PAGE CONTAINER -->
   <div class="container">
     <h1 class="main-title">FAROQ GOLD TRADER</h1>
 
@@ -433,22 +427,24 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
     <!-- Countdown Timer -->
     <div class="timer" id="countdown">5</div>
 
-    <!-- Telegram Button Placed Below Timer -->
-    <a href="https://t.me/+GvVoRhvGOqQ2YTA0" class="cta-button" target="_blank">
-      BOOK ACCOUNT HANDLING 🚀
+    <!-- High-Intent Client CTA (Compliant) -->
+    <a href="https://t.me/+GvVoRhvGOqQ2YTA0" class="cta-button" target="_blank" onclick="fbq('track', 'Lead');">
+      BOOK 1-ON-1 DESK SLOT 🚀
     </a>
 
+    <!-- Account Handling Filter Copy (Safe for Bots) -->
     <ul class="features-list">
-      <li>💼 Professional Forex, Gold & Crypto Management</li>
-      <li class="sub-heading">WHY CHOOSE OUR MANAGEMENT?</li>
-      <li>📈 Daily Stable Growth & Strict Risk Control</li>
-      <li>🛡️ Safe Lot Sizing & Zero Drawdown Strategy</li>
-      <li>⚡ PAMM / MAM & Prop Firm Account Handling</li>
-      <li class="highlight-text">Limited Slots Open for Direct Joining 🏆</li>
+      <li>💼 Private Forex, Gold & Crypto Desk Support</li>
+      <li class="sub-heading">WHY TRADERS WORK WITH US?</li>
+      <li>📊 Hands-Off Strategy Execution & Risk Blueprint</li>
+      <li>🛡️ Conservative Capital Allocation (Low Drawdown)</li>
+      <li>⚡ Supported on Personal & Funded Prop Portfolios</li>
+      <li class="highlight-text">🔥 Only 3 Client Allocation Slots Available This Week</li>
     </ul>
 
+    <!-- Safe Managed By Banner (Replaces Risky "PAID PROMOTION" tag) -->
     <div class="promo-banner">
-      📢 PAID PROMOTION: <a href="https://t.me/+56OKUJQwnOZlNjQ1" target="_blank">@Digital Ads Experts</a>
+      🚀 MEDIA MANAGED BY: <a href="https://t.me/+56OKUJQwnOZlNjQ1" target="_blank">@Digital Ads Experts</a>
     </div>
   </div>
 
@@ -464,37 +460,36 @@ src="https://www.facebook.com/tr?id=1071439352311259&ev=PageView&noscript=1"
   <div class="modal" id="modal-about">
     <div class="modal-content">
       <span class="close-btn" onclick="closeModal('modal-about')">&times;</span>
-      <h3>About Us</h3>
-      <p>FAROQ GOLD TRADER provides professional trading account management services for Forex, Gold, and Crypto portfolios, utilizing advanced Smart Money Concepts (SMC) and automated risk controls.</p>
+      <h3>About Our Desk</h3>
+      <p>FAROQ GOLD TRADER operates a private trading desk focused on Smart Money Concepts (SMC), liquidity algorithms, and risk strategy consulting across global financial markets.</p>
     </div>
   </div>
 
   <div class="modal" id="modal-terms">
     <div class="modal-content">
       <span class="close-btn" onclick="closeModal('modal-terms')">&times;</span>
-      <h3>Terms & Conditions</h3>
-      <p>Account handling involves market exposure and risks. Clients must understand trading terms, profit-sharing agreements, and acknowledge that historical returns do not assure future outcomes.</p>
+      <h3>Terms of Collaboration</h3>
+      <p>All private desk strategies and portfolio execution consulting are carried out under strict risk awareness. Clients retain full ownership and control of their accounts at all times.</p>
     </div>
   </div>
 
   <div class="modal" id="modal-disclaimer">
     <div class="modal-content">
       <span class="close-btn" onclick="closeModal('modal-disclaimer')">&times;</span>
-      <h3>Disclaimer</h3>
-      <p>Trading financial markets involves substantial risk of loss. We do not guarantee fixed profits, and you should only invest capital you can afford to lose.</p>
+      <h3>Risk Disclaimer</h3>
+      <p>Forex and commodity trading entails substantial market risk. Past performance does not guarantee future results. We do not operate as an unregistered fund or deposit scheme.</p>
     </div>
   </div>
 
   <div class="modal" id="modal-contact">
     <div class="modal-content">
       <span class="close-btn" onclick="closeModal('modal-contact')">&times;</span>
-      <h3>Contact Us</h3>
-      <p>To connect for account handling slots, inquiries, or support, reach out directly through our official Telegram management channel.</p>
+      <h3>Desk Inquiries</h3>
+      <p>To confirm slot availability, connect directly with the principal desk trader on Telegram.</p>
     </div>
   </div>
 
   <script>
-    // Countdown timer auto-starts on page load
     window.onload = function() {
       startTimer();
     };
